@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dtl_popup_border"
+    >
+
+    <Space
+        android:id="@+id/dtl_top_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dtl_btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/purple"
+        app:layout_constraintTop_toTopOf="@id/dtl_top_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearanceOverlay="@style/button_rounded_left" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_vector_back"
+        android:forceDarkAllowed="false"
+        app:layout_constraintStart_toStartOf="@id/dtl_btn_back"
+        app:layout_constraintEnd_toEndOf="@id/dtl_btn_back"
+        app:layout_constraintTop_toTopOf="@id/dtl_btn_back"
+        app:layout_constraintBottom_toBottomOf="@id/dtl_btn_back"/>
+
+    <TextView
+        android:id="@+id/dtl_tips_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="27sp"
+        android:fontFamily="@font/inter"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:textColor="@color/main_text_color"
+        app:layout_constraintTop_toTopOf="@id/dtl_top_space"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Tips"/>
+
+    <LinearLayout
+        android:id="@+id/dtl_ll_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/dtl_tips_title"
+        app:layout_constraintTop_toBottomOf="@id/dtl_tips_title"
+        android:layout_marginTop="@dimen/dtl_margin_title_tips"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/dtl_ll_tips_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="50dp"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@color/purple"
+                app:shapeAppearanceOverlay="@style/button_rounded_left_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/dtl_txt_tips_1"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/inter"
+                android:textColor="@color/main_text_color"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dtl_ll_tips_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="50dp"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@color/purple"
+                app:shapeAppearanceOverlay="@style/button_rounded_left_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/dtl_txt_tips_2"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/inter"
+                android:textColor="@color/main_text_color"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/dtl_ll_tips_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="50dp"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@color/purple"
+                app:shapeAppearanceOverlay="@style/button_rounded_left_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/dtl_txt_tips_3"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/inter"
+                android:textColor="@color/main_text_color"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/dtl_ll_tips_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="50dp"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@color/purple"
+                app:shapeAppearanceOverlay="@style/button_rounded_left_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/dtl_txt_tips_4"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/inter"
+                android:textColor="@color/main_text_color"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/dtl_ll_tips_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="50dp"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@color/purple"
+                app:shapeAppearanceOverlay="@style/button_rounded_left_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/dtl_txt_tips_5"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/inter"
+                android:textColor="@color/main_text_color"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+<Space
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/dtl_ll_tips"
+    android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

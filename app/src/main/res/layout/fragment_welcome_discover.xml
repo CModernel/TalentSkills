@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/fwd_btn_help"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/purple"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearanceOverlay="@style/button_rounded_right" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bulb"
+        app:layout_constraintStart_toStartOf="@id/fwd_btn_help"
+        app:layout_constraintEnd_toEndOf="@id/fwd_btn_help"
+        app:layout_constraintTop_toTopOf="@id/fwd_btn_help"
+        app:layout_constraintBottom_toBottomOf="@id/fwd_btn_help"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/fwd_btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/purple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/button_rounded_left" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_vector_back"
+        android:forceDarkAllowed="false"
+        app:layout_constraintStart_toStartOf="@id/fwd_btn_back"
+        app:layout_constraintEnd_toEndOf="@id/fwd_btn_back"
+        app:layout_constraintTop_toTopOf="@id/fwd_btn_back"
+        app:layout_constraintBottom_toBottomOf="@id/fwd_btn_back"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_grupo_discover"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fwd_tv_descubre"
+        android:layout_marginBottom="@dimen/fwd_txt_margin_identifica"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fwd_tv_descubre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fwd_txt_discover"
+        style="@style/title_descubre"
+        android:textSize="@dimen/generic_title_1"
+        android:textFontWeight="700"
+        android:textColor="@color/orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fwd_tv_identifica"
+        android:layout_marginBottom="@dimen/fwd_txt_margin_descubre"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fwd_tv_identifica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fwd_txt_identify"
+        android:textColor="@color/main_text_color"
+        style="@style/txt_descubre"
+        android:textFontWeight="400"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fwd_tv_etapa1"
+        android:layout_marginBottom="@dimen/fwd_txt_margin_identifica"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fwd_tv_etapa1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fwd_txt_stage_1"
+        android:textColor="@color/main_text_color"
+        style="@style/txt_descubre"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fwd_top_guide"
+        android:layout_marginBottom="@dimen/fwd_txt_margin_etapa"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fwd_top_guide"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40"
+        />
+
+    <View
+        android:id="@+id/fwd_v_top"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/main_text_color"
+        android:forceDarkAllowed="false"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fwd_top_guide"
+        app:layout_constraintBottom_toTopOf="@id/fwd_top_guide"
+        />
+
+    <View
+        android:id="@+id/fwd_v_center"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/main_text_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fwd_top_guide"
+        app:layout_constraintBottom_toTopOf="@id/fwd_bottom_guide"
+        android:forceDarkAllowed="false"
+        />
+
+    <View
+        android:id="@+id/fwd_v_bottom"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/main_text_color"
+        android:forceDarkAllowed="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fwd_bottom_guide"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fwd_bottom_guide"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fwd_tv_minutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fwd_txt_40_min"
+        style="@style/title_descubre"
+        android:textSize="@dimen/generic_title_1"
+        android:textFontWeight="700"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toStartOf="@id/fwd_v_center"
+        app:layout_constraintStart_toStartOf="@id/fwd_v_top"
+        app:layout_constraintTop_toBottomOf="@id/fwd_top_guide"
+        app:layout_constraintBottom_toTopOf="@id/fwd_tv_tiempo_aprox"
+        android:layout_marginTop="@dimen/fwd_txt_margin_instrucciones"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fwd_tv_tiempo_aprox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fwd_txt_time_aprox"
+        android:textColor="@color/main_text_color"
+        style="@style/txt_descubre"
+        android:textFontWeight="400"
+        app:layout_constraintEnd_toStartOf="@id/fwd_v_center"
+        app:layout_constraintStart_toStartOf="@id/fwd_v_top"
+        app:layout_constraintTop_toBottomOf="@id/fwd_tv_minutos"
+        app:layout_constraintBottom_toTopOf="@id/fwd_bottom_guide"
+        android:layout_marginBottom="@dimen/fwd_txt_margin_instrucciones"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fwd_tv_190"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="190"
+        style="@style/title_descubre"
+        android:textSize="@dimen/generic_title_1"
+        android:textFontWeight="700"
+        android:textColor="@color/orange"
+        app:layout_constraintStart_toEndOf="@id/fwd_v_center"
+        app:layout_constraintEnd_toEndOf="@id/fwd_v_top"
+        app:layout_constraintTop_toBottomOf="@id/fwd_top_guide"
+        app:layout_constraintBottom_toTopOf="@id/fwd_tv_tiempo_aprox"
+        android:layout_marginTop="@dimen/fwd_txt_margin_instrucciones"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fwd_tv_preguntas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fwd_txt_questions"
+        android:textColor="@color/main_text_color"
+        style="@style/txt_descubre"
+        android:textFontWeight="400"
+        app:layout_constraintStart_toEndOf="@id/fwd_v_center"
+        app:layout_constraintEnd_toEndOf="@id/fwd_v_top"
+        app:layout_constraintTop_toBottomOf="@id/fwd_tv_minutos"
+        app:layout_constraintBottom_toTopOf="@id/fwd_bottom_guide"
+        android:layout_marginBottom="@dimen/fwd_txt_margin_instrucciones"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fwd_tv_beneficios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_text_color"
+        android:text="@string/fwd_txt_benefits"
+        style="@style/txt_descubre"
+        app:layout_constraintTop_toBottomOf="@id/fwd_v_bottom"
+        app:layout_constraintStart_toStartOf="@id/fwd_v_bottom"
+        android:layout_marginStart="@dimen/fwd_txt_margin_start_beneficios"
+        android:layout_marginTop="@dimen/fwd_txt_margin_top_beneficios"
+        />
+    
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fwd_tv_beneficios"
+        app:layout_constraintStart_toStartOf="@id/fwd_v_bottom"
+        app:layout_constraintEnd_toEndOf="@id/fwd_v_bottom"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        >
+        
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="2dp"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_vector_mirror"
+                app:tint="@color/main_text_color" />
+
+            <Space
+                android:layout_width="@dimen/fwd_space_margin_beneficios"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_color"
+                style="@style/txt_descubre"
+                android:text="@string/fwd_benefit_1"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="2dp"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_vector_rocket"
+                app:tint="@color/main_text_color" />
+            <Space
+                android:layout_width="@dimen/fwd_space_margin_beneficios"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_color"
+                style="@style/txt_descubre"
+                android:text="@string/fwd_benefit_2"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="2dp"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_vector_pc_user"
+                app:tint="@color/main_text_color" />
+            <Space
+                android:layout_width="@dimen/fwd_space_margin_beneficios"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_color"
+                style="@style/txt_descubre"
+                android:text="@string/fwd_benefit_3"
+
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/fto_btn_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fwd_txt_start"
+        android:layout_marginBottom="37dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inter_bold"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/custom_button_1"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/it_cl"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    >
+<LinearLayout
+    android:id="@+id/it_ll"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:background="@drawable/combo_box_selector_inactive">
+
+    <LinearLayout
+        android:id="@+id/it_ll_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/it_margin_small_1"
+        android:layout_marginBottom="@dimen/it_margin_small_1"
+        android:layout_marginStart="@dimen/it_margin_small_2"
+        android:layout_marginEnd="@dimen/it_margin_small_3"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/it_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:textStyle="bold"
+            android:text="title"
+            android:textSize="@dimen/it_title_small_1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/main_text_color" />
+
+        <TextView
+            android:id="@+id/it_txt_description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/main_text_color"
+            android:text="description"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:textSize="@dimen/it_description_small_1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/it_rb"
+        android:tag="@string/it_rb_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        style="@style/radio_button_selected"
+        />
+
+</LinearLayout>
+
+<include
+    android:id="@+id/it_ll_discount_tag"
+    layout="@layout/item_discount_tag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="15dp"
+    app:layout_constraintEnd_toEndOf="@id/it_ll"
+    app:layout_constraintTop_toTopOf="@id/it_ll"
+    app:layout_constraintBottom_toTopOf="@id/it_ll"
+    >
+</include>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

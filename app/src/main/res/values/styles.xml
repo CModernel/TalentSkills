@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="button_rounded_right_small">
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+    </style>
+    <style name="button_rounded_right">
+        <item name="cornerSizeTopLeft">25dp</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerSizeBottomLeft">25dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+    </style>
+    <style name="button_rounded_left">
+        <item name="cornerSizeTopRight">25dp</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeBottomLeft">25dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+    </style>
+    <style name="button_rounded_left_small">
+        <item name="cornerSizeTopRight">11dp</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeBottomLeft">11dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerSizeBottomRight">11dp</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+    </style>
+    <style name="button_rounded_top">
+        <item name="cornerSizeTopRight">25dp</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopLeft">25dp</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+    </style>
+    <style name="radio_button_selected">
+        <item name="android:button">@drawable/custom_radio_btn</item>
+    </style>
+    <style name="dialog_welcome_window" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="windowMinWidthMajor">70%</item>
+        <item name="windowMinWidthMinor">70%</item>
+    </style>
+    <style name="title_descubre">
+        <item name="android:color">@color/orange</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="txt_descubre">
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

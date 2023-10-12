@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Flow 1 -->
+    <!-- Talent Offer Fragment -->
+    <dimen name="fto_txt_continue">@dimen/_12ssp</dimen>
+
+    <!-- Item Talent -->
+    <dimen name="it_margin_top">10dp</dimen>
+    <dimen name="it_margin_bottom">10dp</dimen>
+    <dimen name="it_margin_small_1">@dimen/_8sdp</dimen>
+    <dimen name="it_margin_small_2">@dimen/_15sdp</dimen>
+    <dimen name="it_title_small_1">@dimen/_16sdp</dimen>
+    <dimen name="it_description_small_1">@dimen/_12sdp</dimen>
+    <dimen name="it_margin_small_3">@dimen/_8sdp</dimen>
+
+    <!-- Item Discount Talent -->
+    <dimen name="idt_txt_small_1">@dimen/_12sdp</dimen>
+
+    <!-- TODO: Flow 2 -->
+
+    <!-- Flow 3 -->
+    <!-- Talent Detail Fragment -->
+    <dimen name="ftd_tv_title_size">@dimen/_20sdp</dimen>
+    <dimen name="ftd_tv_txt_size_1">@dimen/_14sdp</dimen>
+    <dimen name="ftd_tv_txt_size_2">@dimen/_15sdp</dimen>
+
+    <dimen name="iq_tv_answer">@dimen/_12sdp</dimen>
+    <dimen name="iq_ll_margin">@dimen/_10sdp</dimen>
+</resources>

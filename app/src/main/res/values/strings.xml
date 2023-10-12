@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">TaletPort</string>
+
+    <!-- Loading Offer Fragment -->
+    <string name="fl_loading_text">We\'re going to redirect you to the Talenport page so you can make your payment.</string>
+
+    <!-- Select Navigation Fragment -->
+    <string name="fsn_txt_show_offers">View talent purchase offers</string>
+    <string name="fsn_txt_view_welcome">View long test welcome</string>
+    <string name="fsn_txt_view_detail_talent">View Talent Details</string>
+
+    <!-- Flow 1 -->
+    <!-- Offer Fragment -->
+    <string name="fto_txt_continue">Continue</string>
+    <string name="fto_txt_1">We have a</string>
+    <string name="fto_txt_3">offer for you</string>
+    <string name="fto_txt_2">SPECIAL</string>
+
+    <!-- Item Talent -->
+    <string name="it_rb_tag">it_rb</string>
+
+    <!-- Flow 2 -->
+    <!-- Welcome Dialog Fragment -->
+    <string name="dwl_txt_acept">Accept</string>
+    <string name="dwl_txt_welcome">You are 3 steps away from discovering your main talents. To achieve them, you must answer the phases:</string>
+
+    <!-- Welcome Discovery Fragment -->
+    <string name="fwd_txt_stage_1">STAGE 1</string>
+    <string name="fwd_txt_identify">We will identify your talents.</string>
+    <string name="fwd_txt_discover">Discover</string>
+    <string name="fwd_txt_time_aprox">APPROXIMATE TIME.</string>
+    <string name="fwd_txt_benefits">BENEFITS</string>
+    <string name="fwd_txt_questions">QUESTIONS</string>
+    <string name="fwd_txt_40_min">40 MIN</string>
+    <string name="fwd_txt_start">Start</string>
+
+    <!-- Help Discover Fragment -->
+    <string name="fhd_txt_help">The diagnosis is divided into 3 stages, it consists of a series of sentences that will appear in pairs. From each pair, you should choose the sentence that expresses how you are and select the emoji that best describes you. You will have 30 seconds to respond to each sentence. In case both sentences or neither describe you, you can select the emoji in the middle.</string>
+
+    <!-- Dialog Tips Layout -->
+    <string name="dtl_txt_tips_1">Search for activities or projects where you can put your talents into action.</string>
+    <string name="dtl_txt_tips_2">Make sure to know the talents of the people close to you and leverage them for better results.</string>
+    <string name="dtl_txt_tips_3">Enhance the work of others with what you do best and faster.</string>
+    <string name="dtl_txt_tips_4">There are no good or bad talents; seek to make the most of them to improve your performance and achieve your goals.</string>
+    <string name="dtl_txt_tips_5">Now that you know your talents, remember that what\'s important is not the name of the talent but how you put it into practice through four key questions:\n\n1. How do you build strong relationships with others?\n2. How do you solve problems?\n3. What motivates you?\n4. What activities do you perform with greater speed and precision?</string>
+
+    <string name="ftd_txt_title_1">Competitor</string>
+    <string name="ftd_txt_title_2">Questions</string>
+    <string name="ftd_txt_title_3">Actions to leverage my talents</string>
+    <string name="ftd_txt_1">While having a conversation, your mind highlights aspects that are</string>
+    <string name="ftd_txt_2">You enjoy competing to always be <b>the number 1</b></string>
+    <string name="ftd_btn_show_video">Watch video</string>
+    <string name="ftd_btn_role_entrepreneur">Entrepreneur Role</string>
+    <string name="ftd_btn_excellence_career">Career of Excellence</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="fw_txt_sign_google">Sign in with Google</string>
+    <string name="dwl_welcome">Welcome</string>
+    <string name="dwl_discover">Discover</string>
+    <string name="dwl_confirm">Confirm</string>
+    <string name="dwl_apply">Apply</string>
+    <string name="fwd_benefit_1">Get to know yourself better.</string>
+    <string name="fwd_benefit_2">We will enhance your development.</string>
+    <string name="fwd_benefit_3">We will improve your professional experience.</string>
+    <string name="fhd_title">Which are your talents?</string>
+    <string name="fhd_title_start">Start</string>
+    <string name="ftd_txt_subtitle_1">IMPORTANT</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.SelectNavigationFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fsn_left_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fsn_btn_flow1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/combo_box_selector"
+        android:text="@string/fsn_txt_show_offers"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/fsn_btn_flow2"
+        app:layout_constraintEnd_toEndOf="@id/fsn_right_guide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/fsn_left_guide"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fsn_btn_flow2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/combo_box_selector"
+        android:text="@string/fsn_txt_view_welcome"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/fsn_btn_flow3"
+        app:layout_constraintEnd_toEndOf="@id/fsn_right_guide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/fsn_left_guide"
+        app:layout_constraintTop_toBottomOf="@+id/fsn_btn_flow1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fsn_btn_flow3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/combo_box_selector"
+        android:text="@string/fsn_txt_view_detail_talent"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/fsn_right_guide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/fsn_left_guide"
+        app:layout_constraintTop_toBottomOf="@+id/fsn_btn_flow2" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fsn_right_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.view.TalentDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/ftd_right_guide"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.90"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/ftd_left_guide"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.10"
+            />
+
+        <FrameLayout
+            android:id="@+id/ftd_iv_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_talent_detail_bg"
+                android:scaleType="fitXY"
+                />
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:src="@drawable/ic_btn_share"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_left_guide"
+            app:layout_constraintBottom_toBottomOf="@id/ftd_iv_bg"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ftd_btn_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/purple"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@id/ftd_right_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_guide"
+            app:shapeAppearanceOverlay="@style/button_rounded_right_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/ftd_btn_close"
+            app:layout_constraintEnd_toEndOf="@+id/ftd_btn_close"
+            app:layout_constraintStart_toStartOf="@+id/ftd_btn_close"
+            app:layout_constraintBottom_toBottomOf="@+id/ftd_btn_close"
+            android:text="X"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter_bold"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ftd_tv_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ftd_iv_bg"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:text="@string/ftd_txt_title_1"
+            android:fontFamily="@font/inter_bold"
+            android:textFontWeight="700"
+            android:textSize="@dimen/ftd_tv_title_size"
+            android:textColor="@color/main_text_color"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ftd_tv_txt_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_tv_title_1"
+            android:textAlignment="center"
+            android:text="@string/ftd_txt_1"
+            android:textFontWeight="400"
+            android:fontFamily="@font/inter"
+            android:textSize="@dimen/ftd_tv_txt_size_1"
+            android:textColor="@color/main_text_color"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ftd_tv_title_important"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ftd_tv_txt_1"
+            android:text="@string/ftd_txt_subtitle_1"
+            android:textColor="@color/purple"
+            android:fontFamily="@font/inter"
+            android:textFontWeight="600"
+            android:textSize="@dimen/ftd_tv_txt_size_2"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ftd_iv_img_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_business_man"
+            app:layout_constraintTop_toBottomOf="@id/ftd_tv_title_important"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_guide"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ftd_tv_txt_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_iv_img_1"
+            android:textAlignment="center"
+            android:text="@string/ftd_txt_2"
+            android:textFontWeight="400"
+            android:fontFamily="@font/inter"
+            android:textSize="@dimen/ftd_tv_txt_size_1"
+            android:textColor="@color/main_text_color"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/ftd_right_btn_guide"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.80"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/ftd_left_btn_guide"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.20"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fto_btn_show_video"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ftd_btn_show_video"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter"
+            android:textFontWeight="700"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/fto_txt_continue"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_btn_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_btn_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_tv_txt_2"
+            android:background="@drawable/custom_button_1"
+            />
+
+        <Space
+            android:id="@+id/ftd_show_video_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fto_btn_show_video"
+            android:layout_marginTop="@dimen/_30sdp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ftd_tv_title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_show_video_space"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="@string/ftd_txt_title_2"
+            android:fontFamily="@font/inter"
+            android:textFontWeight="600"
+            android:textSize="@dimen/ftd_tv_title_size"
+            android:textColor="@color/main_text_color"
+            />
+
+        <View
+            android:id="@+id/ftd_v_question"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/gray_2"
+            android:forceDarkAllowed="false"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_guide"
+            app:layout_constraintBottom_toBottomOf="@id/ftd_tv_title_2"
+            />
+
+        <Space
+            android:id="@+id/ftd_question_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ftd_v_question"
+            android:layout_marginTop="@dimen/_25sdp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ftd_rv_question_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_question"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_question_space"
+            tools:itemCount="1" />
+
+        <Space
+            android:id="@+id/ftd_action_space_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ftd_rv_question_list"
+            android:layout_marginTop="@dimen/_25sdp"/>
+
+        <View
+            android:id="@+id/ftd_action_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/gray_2"
+            android:forceDarkAllowed="false"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_action_space_1"
+            />
+
+        <Space
+            android:id="@+id/ftd_action_space_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_action_line"
+            android:layout_marginTop="@dimen/_25sdp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ftd_tv_title_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/ftd_txt_title_3"
+            android:fontFamily="@font/inter_bold"
+            android:textFontWeight="700"
+            android:textSize="@dimen/ftd_tv_title_size"
+            android:textColor="@color/main_text_color"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_action_space_2"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ftd_rv_actions_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_action"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_tv_title_3"
+            android:nestedScrollingEnabled="false"
+            tools:itemCount="1" />
+
+        <Space
+            android:id="@+id/ftd_action_space_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_rv_actions_list"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ftd_btn_role_entrepreneur"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ftd_btn_role_entrepreneur"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter"
+            android:textFontWeight="700"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/fto_txt_continue"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_btn_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_btn_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_action_space_3"
+            android:background="@drawable/custom_button_1"
+            />
+
+        <Space
+            android:id="@+id/ftd_btn_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_btn_role_entrepreneur"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ftd_btn_excellence_career"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ftd_btn_excellence_career"
+            android:textColor="@color/purple"
+            android:fontFamily="@font/inter"
+            android:textFontWeight="700"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/fto_txt_continue"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_btn_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_btn_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_btn_space"
+            android:background="@drawable/combo_box_selector"
+            />
+
+        <Space
+            android:id="@+id/ftd_btn_space_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/ftd_left_guide"
+            app:layout_constraintEnd_toEndOf="@id/ftd_right_guide"
+            app:layout_constraintTop_toBottomOf="@id/ftd_btn_excellence_career"
+            android:layout_marginTop="@dimen/_30sdp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

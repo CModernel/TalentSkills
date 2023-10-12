@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentSelectNavigation">
+
+    <fragment
+        android:id="@+id/fragmentTalentOffer"
+        android:name="com.example.talent_project.ui.view.TalentOfferFragment"
+        android:label="fragment_talent_offer"
+        tools:layout="@layout/fragment_talent_offer" >
+        <action
+            android:id="@+id/action_fragmentTalentOffer_to_fragmentLoadingOffer"
+            app:destination="@id/fragmentLoadingOffer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentLoadingOffer"
+        android:name="com.example.talent_project.ui.view.LoadingOfferFragment"
+        android:label="fragment_loading_offer"
+        tools:layout="@layout/fragment_loading_offer" />
+
+    <fragment
+        android:id="@+id/fragmentSelectNavigation"
+        android:name="com.example.talent_project.ui.view.SelectNavigationFragment"
+        android:label="fragment_select_navigation"
+        tools:layout="@layout/fragment_select_navigation" >
+        <action
+            android:id="@+id/action_selectNavigation_to_fragmentTalentOffer"
+            app:destination="@id/fragmentTalentOffer" />
+        <action
+            android:id="@+id/action_selectNavigation_to_welcomeDiscover"
+            app:destination="@id/fragmentWelcomeDiscover" />
+        <action
+            android:id="@+id/action_fragmentSelectNavigation_to_talentCompetitorFragment"
+            app:destination="@id/fragmentTalentCompetitor" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWelcomeDiscover"
+        android:name="com.example.talent_project.ui.view.WelcomeDiscoverFragment"
+        android:label="fragment_welcome_discover"
+        tools:layout="@layout/fragment_welcome_discover" >
+        <action
+            android:id="@+id/action_fragmentWelcomeDiscover_to_helpDiscoverFragment"
+            app:destination="@id/fragmentHelpDiscover" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHelpDiscover"
+        android:name="com.example.talent_project.ui.view.HelpDiscoverFragment"
+        android:label="fragment_help_discover"
+        tools:layout="@layout/fragment_help_discover" />
+    <fragment
+        android:id="@+id/fragmentTalentCompetitor"
+        android:name="com.example.talent_project.ui.view.TalentDetailFragment"
+        android:label="fragment_talent_competitor"
+        tools:layout="@layout/fragment_talent_detail" />
+
+</navigation>

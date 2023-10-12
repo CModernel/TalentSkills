@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="generic_title_1">@dimen/_22sdp</dimen>
+
+    <!-- Flow 1 -->
+    <!-- Talent Offer Fragment -->
+    <dimen name="fto_txt_small_1">@dimen/_15sdp</dimen>
+    <dimen name="fto_txt_small_2">@dimen/_40sdp</dimen>
+    <dimen name="fto_txt_continue">@dimen/_14ssp</dimen>
+
+    <!-- Item Talent -->
+    <dimen name="it_title_small_1">@dimen/_20sdp</dimen>
+    <dimen name="it_description_small_1">@dimen/_16sdp</dimen>
+    <dimen name="it_margin_small_1">@dimen/_15sdp</dimen>
+    <dimen name="it_margin_small_2">@dimen/_15sdp</dimen>
+    <dimen name="it_margin_top">@dimen/_15sdp</dimen>
+    <dimen name="it_margin_bottom">@dimen/_15sdp</dimen>
+    <dimen name="it_margin_small_3">@dimen/_16sdp</dimen>
+
+    <!-- Item Discount Talent -->
+    <dimen name="idt_txt_small_1">@dimen/_12ssp</dimen>
+
+    <!-- Flow 2 -->
+    <!-- Welcome Discover Fragment -->
+    <dimen name="fwd_txt_margin_etapa">@dimen/_16sdp</dimen>
+    <dimen name="fwd_txt_margin_identifica">@dimen/_20sdp</dimen>
+    <dimen name="fwd_txt_margin_descubre">@dimen/_8sdp</dimen>
+    <dimen name="fwd_txt_margin_instrucciones">@dimen/_20sdp</dimen>
+    <dimen name="fwd_txt_margin_start_beneficios">@dimen/_10sdp</dimen>
+    <dimen name="fwd_txt_margin_top_beneficios">@dimen/_20sdp</dimen>
+    <dimen name="fwd_space_margin_beneficios">@dimen/_20sdp</dimen>
+
+    <!-- Dialog Tips Layout -->
+    <dimen name="dtl_margin_title_tips">@dimen/_30sdp</dimen>
+
+    <!-- Flow 3 -->
+    <!-- Talent Detail Fragment-->
+    <dimen name="ftd_tv_title_size">@dimen/_26sdp</dimen>
+    <dimen name="ftd_tv_txt_size_1">@dimen/_16sdp</dimen>
+    <dimen name="ftd_tv_txt_size_2">@dimen/_17sdp</dimen>
+
+    <!-- Item Question -->
+    <dimen name="iq_tv_answer">@dimen/_10sdp</dimen>
+    <dimen name="iq_ll_margin">@dimen/_10sdp</dimen>
+</resources>

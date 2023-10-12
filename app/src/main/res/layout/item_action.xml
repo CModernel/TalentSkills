@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    >
+
+    <TextView
+        android:id="@+id/ia_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ftd_tv_txt_size_1"
+        android:fontFamily="@font/inter"
+        android:textFontWeight="400"
+        android:textColor="@color/main_text_color"
+        />
+
+</LinearLayout>
