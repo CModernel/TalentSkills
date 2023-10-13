@@ -19,6 +19,7 @@ This Android app project was created with the primary objective of helping users
 - LiveData and ViewModel: Implemented for reactive UI updates.
 - ViewBinding: For efficient view interaction.
 - Coroutines: Employed for asynchronous operations.
+- Lottie Animations
 
 ## Screenshots 
 
